@@ -1,0 +1,12 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+  <div class="container">
+    <section class="blog-listing">
+      <h2>Blog Posts</h2>
+      {% for i in article %}
+        {% include "includes/article.html" %}
+      {% endfor %}
+    </section>
+  </div>
+{% endblock %}
