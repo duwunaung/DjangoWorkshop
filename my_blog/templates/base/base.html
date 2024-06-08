@@ -1,0 +1,31 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1><a href="{% url "home" %}">Blog Application</a></h1>
+    <nav>
+      <ul>
+        <li>
+            {% comment %} {%url  %}  {% endcomment %}
+          <a href="{% url "blogs" category='all' %}">Blogs</a>
+        </li>
+        <li>
+            <a href="{% url "blogs" category='tech' %}">Tech News</a></li>
+        <li>
+            <a href="{% url "blogs" category='development' %}">Development News</a></li>
+      </ul>
+    </nav>
+    {% block body %}
+    
+    {% endblock body %}
+
+    <footer>
+        Copyright (c) PiRson || 2024
+    </footer>
+  </body>
+</html>
