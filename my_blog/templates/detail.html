@@ -1,0 +1,43 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+  <div class="container">
+    <article class="blog-post">
+      <h2 class="post-title">Blog Post Title</h2>
+      <p class="post-meta">Posted on June 8, 2024 by Admin</p>
+      <img src="path-to-your-image.jpg" alt="Blog Post Image" class="post-image" />
+      <p class="post-content">This is the detailed content of the blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur luctus metus, eget venenatis nulla consequat nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed non tempor risus. Curabitur bibendum, elit eget cursus ultrices, ipsum metus faucibus nulla, sit amet convallis elit nisl in turpis. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet.</p>
+      <p class="post-content">Additional content for the blog post can go here. Morbi vulputate, nunc vel dapibus dictum, arcu nisi ultrices erat, id venenatis ligula elit a diam. Suspendisse vitae sodales risus. Nulla facilisi. Integer facilisis ultrices massa, ut feugiat velit tincidunt non. Quisque vehicula risus at enim gravida, non placerat metus laoreet. Maecenas in facilisis erat. Integer suscipit leo id erat ultricies, eget ultrices velit aliquet.</p>
+    </article>
+    <section class="comments-section">
+      <h3>Comments</h3>
+      <div class="comment">
+        <p class="comment-meta">John Doe on June 8, 2024</p>
+        <p class="comment-text">This is a comment on the blog post. Great content!</p>
+      </div>
+      <div class="comment">
+        <p class="comment-meta">Jane Smith on June 7, 2024</p>
+        <p class="comment-text">I found this post very informative. Thanks for sharing!</p>
+      </div>
+      <!-- Add more comments as needed -->
+    </section>
+    <section class="comment-form-section">
+      <h3>Leave a Comment</h3>
+      <form class="comment-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </section>
+  </div>
+{% endblock %}

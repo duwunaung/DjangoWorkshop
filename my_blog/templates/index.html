@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+  <div class="container">
+    <section class="featured-blogs">
+      <h2>Featured Blogs</h2>
+      <div class="featured-posts">
+        {% for number in feature %}
+          {% include "includes/feature.html" %}
+        {% endfor %}
+      </div>
+    </section>
+    <section class="recent-blogs">
+      <h2>Recent Blogs</h2>
+      {% for i in recent %}
+        {% include "includes/article.html" %}
+      {% endfor %}
+    </section>
+  </div>
+{% endblock %}
