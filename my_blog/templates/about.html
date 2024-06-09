@@ -1,0 +1,11 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+  <div class="container">
+    <section class="about-section">
+      <h2>About Us</h2>
+      <img src="{{ info.image.url }}" alt="About Us Image" class="about-image" />
+      <p>{{ info.content|linebreaks }}</p>
+    </section>
+  </div>
+{% endblock %}
